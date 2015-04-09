@@ -1,8 +1,18 @@
 <ion-modal-view>
   <ion-header-bar>
-    <h1 class="title">My Modal title</h1>
+    <h1 class="title">Paste URL</h1>
   </ion-header-bar>
   <ion-content>
-    Hello!
+    
+    <div class="list">
+      <label class="item item-input">
+        <input ng-model="url" type="text" placeholder="http://something.com">
+      </label>
+    </div>
+
+    <button ng-click="submitUrl(url)" class="button button-block button-royal">
+      Submit
+    </button>
+
   </ion-content>
 </ion-modal-view>

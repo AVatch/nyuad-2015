@@ -14,7 +14,18 @@ angular.module('nyuad2015.services.articles', [])
     return response;
   };
 
+  var parseUrl = function(url){
+    var response = $http({
+            url: DOMAIN + '/api/v1/article/parse/',
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            data: {"url": url}
+        });
+    return response;
+  };
+
   return{
-    getList: getList
+    getList: getList,
+    parseUrl: parseUrl
   };
 }])
