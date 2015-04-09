@@ -1,13 +1,19 @@
-<ion-list>
+<ion-content>
+  <ion-list>
 
-    <ion-item
-      ng-repeat="article in articleList"
-      class="item item-thumbnail-left item-text-wrap" href="#">
-      
-      <img ng-src="{{article.image}}">
-      <h2>{{article.title}}</h2>
-      <p ng-bind-html="article.excerpt"></p>
+      <ion-item
+        ng-repeat="article in articleList"
+        class="item item-thumbnail-left item-text-wrap" href="#">
+        
+        <img ng-src="{{article.image}}">
+        <h2>{{article.title}}</h2>
+        <p ng-bind-html="article.excerpt"></p>
 
-    </ion-item>
+      </ion-item>
 
-</ion-list>
+  </ion-list>
+</ion-content>
+
+<div class="animated rubberBand fab">
+  <i class="ion-ios-plus-empty"></i>
+</div>

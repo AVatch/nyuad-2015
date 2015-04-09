@@ -1,1 +1,22 @@
-/* Empty. Add your own CSS if you like */
+.fab{
+  width:45px;;
+  height:45px;;
+  border-radius: 50px;;
+
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9999;
+
+  background-color: #886aea;
+
+  text-align: center;
+  vertical-align: middle;
+
+  box-shadow: 1px 1px 3px #717171;
+}
+
+.fab i{
+  color: white;
+  font-size: 45px;
+}
