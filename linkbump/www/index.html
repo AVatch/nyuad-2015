@@ -15,6 +15,13 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    <!-- addons -->
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- angular application code -->
+    <script src="js/articles/services.articles.js"></script>
+    <script src="js/articles/controllers.articles.js"></script>
+
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
@@ -24,11 +31,19 @@
   <body ng-app="linkbump">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+      
+      <ion-header-bar class="bar-royal">
+        <h1 class="title">LinkBump!</h1>
       </ion-header-bar>
+
       <ion-content>
+
+        <!-- inser our views using ui-router here -->
+        <div ui-view></div>
+
       </ion-content>
+
     </ion-pane>
+
   </body>
 </html>
