@@ -5,7 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('linkbump', ['ionic',
                             'ui.router',
-                            'nyuad2015.controllers.articles'])
+                            'nyuad2015.controllers.articles',
+                            'nyuad2015.services.articles'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
