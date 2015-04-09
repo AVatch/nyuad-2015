@@ -2,7 +2,7 @@
   <ion-list>
 
       <ion-item
-        ng-repeat="article in articleList"
+        ng-repeat="article in articleList | orderBy:'-bumpCount'"
         on-double-tap="bumpIt(article)"
         class="item item-thumbnail-left item-text-wrap" href="#">
         

@@ -24,8 +24,18 @@ angular.module('nyuad2015.services.articles', [])
     return response;
   };
 
+  var bump = function(pk){
+    var response = $http({
+            url: DOMAIN + '/api/v1/article/' + pk + '/bump/',
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+        });
+    return response;
+  };
+
   return{
     getList: getList,
-    parseUrl: parseUrl
+    parseUrl: parseUrl,
+    bump: bump
   };
 }])

@@ -50,17 +50,18 @@ angular.module('nyuad2015.controllers.articles', [])
           $scope.articleList.unshift(s.data);
           // close the modal
           $scope.closeModal();
-
         }
-
       },function(e){console.log(e);});
-
     };
 
 
     // listenre for double-tap to bump up
     $scope.bumpIt = function(article){
-      console.log(article);
+      Article.bump(article.id).then(function(s){
+        if(s.status==200){
+          article.bumpCount += 1;
+        }
+      }, function(e){console.log(e);});
     };
 
 }]);
