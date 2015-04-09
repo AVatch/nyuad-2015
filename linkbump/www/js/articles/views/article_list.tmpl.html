@@ -3,6 +3,7 @@
 
       <ion-item
         ng-repeat="article in articleList"
+        on-double-tap="bumpIt(article)"
         class="item item-thumbnail-left item-text-wrap" href="#">
         
         <img ng-src="{{article.image}}">

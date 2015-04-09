@@ -53,8 +53,14 @@ angular.module('nyuad2015.controllers.articles', [])
 
         }
 
-
       },function(e){console.log(e);});
 
     };
+
+
+    // listenre for double-tap to bump up
+    $scope.bumpIt = function(article){
+      console.log(article);
+    };
+
 }]);
