@@ -1,9 +1,13 @@
 <ion-list>
 
-    <ion-item class="item item-thumbnail-left" href="#">
-      <img src="http://placehold.it/150x150">
-      <h2>Pretty Hate Machine</h2>
-      <p>Nine Inch Nails</p>
+    <ion-item
+      ng-repeat="article in articleList"
+      class="item item-thumbnail-left item-text-wrap" href="#">
+      
+      <img ng-src="{{article.image}}">
+      <h2>{{article.title}}</h2>
+      <p ng-bind-html="article.excerpt"></p>
+
     </ion-item>
 
 </ion-list>
