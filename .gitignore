@@ -1,0 +1,11 @@
+.DS_Store
+*.sqlite3
+*.pyc
+*.pem
+
+migrations/
+bower_components/
+platforms/
+lib/
+
+secrets.py
