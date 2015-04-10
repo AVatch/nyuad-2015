@@ -2,6 +2,7 @@
 
 To run, go to the ionic application base directory and run
 ```
+> bower install
 > ionic serve
 ```
 
